@@ -5,7 +5,7 @@ import QuickQuestions from "./QuickQuestions";
 function Footer({ query, setQuery, getAIResponse, loading }) {
   return (
     <div className="w-full min-h-20 py-4 flex flex-col items-center justify-center">
-      <QuickQuestions />
+      <QuickQuestions setQuery={setQuery} getAIResponse={getAIResponse} />
       <InputSection
         query={query}
         setQuery={setQuery}

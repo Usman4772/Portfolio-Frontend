@@ -1,4 +1,5 @@
 import SyncLoader from "react-spinners/SyncLoader";
+import Skills from "./Skills";
 function Chat({ message, flags, loading }) {
   if (!message) return null;
 
@@ -9,8 +10,8 @@ function Chat({ message, flags, loading }) {
     return (
       <div className="flex flex-col w-full">
         <div className=" w-full flex justify-center mb-4 animate-slideUp">
-          <div className="min-w-[20%] rounded-full max-w-[80%] md:max-w-[60%]">
-            <div className="px-4 py-3 rounded-full rounded-br-md bg-blue-500 text-white shadow-sm">
+          <div className="min-w-[20%] rounded-full max-w-full ">
+            <div className="p-4 rounded-full rounded-br-md bg-blue-500 text-white shadow-sm">
               <div className="text-sm md:text-base leading-relaxed">
                 {message?.message}
               </div>
@@ -33,14 +34,17 @@ function Chat({ message, flags, loading }) {
 
   if (!loading && isAI) {
     return (
-      <div className=" w-full flex justify-start mb-4 animate-slideUp">
-        <div className=" min-w-[20%] max-w-[80%] md:max-w-[60%]">
-          <div className="px-4 py-3  text-gray-800 ">
-            <div className="text-sm md:text-base leading-relaxed">
-              {message?.message}
+      <div className="w-full">
+        <div className=" w-full flex justify-start mb-4 animate-slideUp">
+          <div className=" min-w-[20%] max-w-full">
+            <div className="px-4 py-3  text-gray-800 ">
+              <div className="text-sm md:text-base leading-relaxed">
+                {message?.message}
+              </div>
             </div>
           </div>
         </div>
+        <Skills />
       </div>
     );
   }
