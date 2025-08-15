@@ -12,7 +12,7 @@ function Project({ project }) {
   } = project;
 
   return (
-    <div className="w-full mb-12 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className=" w-[95%] md:w-full mb-12 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Project Image */}
       <div className="w-full h-64 bg-gray-200 overflow-hidden">
         <img

@@ -82,9 +82,11 @@ function Projects() {
   return (
     <div className="w-full flex flex-col gap-4">
       <Heading text="My Projects" />
-      {projects?.map((project, index) => (
-        <Project key={index} project={project} />
-      ))}
+      <div className="flex flex-col items-center">
+        {projects?.map((project, index) => (
+          <Project key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 }

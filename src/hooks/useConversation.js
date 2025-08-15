@@ -35,6 +35,7 @@ export default function useConversation() {
   }
   async function getAIResponse(query) {
     if (!query || query.trim() === "") return;
+
     try {
       setLoading(true);
       setMessage({

@@ -10,11 +10,11 @@ function NavBar({ setQuery, getAIResponse }) {
   }
 
   return (
-    <div className="w-full p-4 flex justify-between items-start">
+    <div className="w-full p-4 flex justify-center md:justify-between items-start">
       <BlinkingBadge
         text="Looking for a talent?"
         handleClick={handleClickTalent}
-        className="cursor-pointer"
+        className="cursor-pointer max-md:hidden"
       />
       <BrandingHeader />
       <GitHubButton href="https://github.com/Usman4772" />

@@ -6,6 +6,7 @@ import {
   Handshake,
   GraduationCap,
   Smile,
+  TrendingUp,
 } from "lucide-react";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 function QuickQuestions({ setQuery, getAIResponse }) {
@@ -41,8 +42,8 @@ function QuickQuestions({ setQuery, getAIResponse }) {
       prompt: "Tell me about Usman Ali's education.",
     },
     {
-      icon: HiOutlineDotsHorizontal,
-      text: "",
+      icon: TrendingUp,
+      text: "Experience",
       color: "text-gray-600",
       prompt: "Tell me something about Usman Ali's career journey.",
     },
@@ -54,7 +55,7 @@ function QuickQuestions({ setQuery, getAIResponse }) {
 
   return (
     <div className="flex justify-center py-2">
-      <div className="flex flex-wrap gap-3 justify-center max-w-4xl">
+      <div className="flex flex-wrap gap-3 justify-center w-full md:max-w-4xl">
         {questions.map((question, index) => {
           const IconComponent = question.icon;
           return (

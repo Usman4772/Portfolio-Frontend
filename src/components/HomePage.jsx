@@ -26,7 +26,7 @@ function HomePage() {
         {!message?.message ? (
           <Avatar />
         ) : (
-          <div className=" w-[650px]   flex items-start justify-center">
+          <div className=" w-full  md:w-[650px]   flex items-start justify-center">
             <Chat message={message} flags={flags} loading={loading} />
           </div>
         )}
