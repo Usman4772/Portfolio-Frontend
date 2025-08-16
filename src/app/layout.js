@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,20 +17,13 @@ export const metadata = {
   description:
     "Explore the portfolio of Usman Ali, a skilled Frontend and Full-Stack Developer specializing in Next.js, React, Node.js, and MongoDB. Showcasing innovative web applications, scalable solutions, and modern UI/UX design.",
   icons: {
-    icon: "/avatar.png",
+    icon: "/avatar.png", // or "/icon.png"
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>Usman Ali | Full-Stack & Frontend Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Explore the portfolio of Usman Ali, a skilled Frontend and Full-Stack Developer specializing in Next.js, React, Node.js, and MongoDB. Showcasing innovative web applications, scalable solutions, and modern UI/UX design."
-        />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
