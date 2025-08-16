@@ -61,7 +61,7 @@ function Chat({ message, flags, loading }) {
         
 
         {(flags?.journey || flags?.experience) && (
-          <div className="animate-slideUp">
+          <div className="animate-slideUp ">
             <Journey />
           </div>
         )}
