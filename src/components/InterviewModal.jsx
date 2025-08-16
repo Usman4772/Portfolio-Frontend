@@ -16,12 +16,10 @@ import { useState } from "react";
 function InterviewModal({ openModal, setOpenModal }) {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(null);
 
   const handleModalClose = () => {
     setOpenModal(false);
     form.resetFields();
-    setSelectedDate(null);
   };
 
   // Function to disable past dates
@@ -31,7 +29,6 @@ function InterviewModal({ openModal, setOpenModal }) {
 
   // Handle date change
   const handleDateChange = (date) => {
-    setSelectedDate(date);
     // Clear time field if date changes to force user to select valid time
     if (date && date.isSame(dayjs(), "day")) {
       form.setFieldValue("meetingTime", null);
@@ -56,7 +53,9 @@ function InterviewModal({ openModal, setOpenModal }) {
 
     // Additional validation to ensure the datetime is not in the past
     if (interviewDate.isBefore(dayjs())) {
-      message.error("Please select a future date and time for the interview.");
+      message.error(
+        "Please select a future date and time for the consultation."
+      );
       return;
     }
 
@@ -73,12 +72,12 @@ function InterviewModal({ openModal, setOpenModal }) {
         }
       );
       if (response?.data?.success) {
-        message.success("Interview scheduled successfully!");
+        message.success("Consultation scheduled successfully!");
         handleModalClose();
       }
     } catch (error) {
       message.error(
-        error?.response?.data?.message || "Failed to schedule interview."
+        error?.response?.data?.message || "Failed to schedule consultation."
       );
     } finally {
       setLoading(false);
@@ -91,7 +90,7 @@ function InterviewModal({ openModal, setOpenModal }) {
         title={
           <div className="flex items-center gap-2 text-gray-900">
             <Calendar className="w-5 h-5" />
-            <span className="font-semibold">Schedule Interview</span>
+            <span className="font-semibold">Schedule Consultation</span>
           </div>
         }
         open={openModal}
@@ -225,7 +224,7 @@ function InterviewModal({ openModal, setOpenModal }) {
               loading={loading}
               className="px-6 py-2 bg-gray-900 text-white !hover:bg-gray-800 border-gray-900 hover:border-gray-800"
             >
-              Schedule Interview
+              Schedule Consultation
             </Button>
           </div>
         </Form>

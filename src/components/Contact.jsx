@@ -54,8 +54,9 @@ function Contact() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          I&apos;m always interested in new opportunities and collaborations.
-          Feel free to reach out if you&apos;d like to work together.
+          I&apos;m always happy to offer guidance, discuss your ideas, or
+          explore potential collaborations. Feel free to reach out to schedule a
+          consultation.
         </p>
       </div>
 
@@ -110,22 +111,24 @@ function Contact() {
       </div>
 
       {/* Schedule Interview Section */}
+      {/* Schedule Consultation Section */}
       <div className="bg-gray-50 rounded-lg p-8 text-center">
         <div className="max-w-2xl mx-auto">
           <Calendar className="w-12 h-12 text-gray-700 mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Ready to Schedule an Interview?
+            Ready to Schedule a Consultation?
           </h3>
           <p className="text-gray-600 mb-6">
-            I&apos;m currently available for new opportunities. Let&apos;s
-            discuss how I can contribute to your team.
+            I&apos;m available to discuss your project ideas, offer guidance, or
+            explore collaboration opportunities. Let&apos;s find a time to
+            connect.
           </p>
           <button
             onClick={handleScheduleInterview}
             className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200"
           >
             <Calendar className="w-5 h-5 mr-2" />
-            Schedule Interview
+            Schedule Consultation
           </button>
         </div>
       </div>

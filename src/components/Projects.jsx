@@ -42,9 +42,9 @@ function Projects() {
       previewImage: "/mockmaster.png",
     },
     {
-      title: "Vyafac – Custom Payment Gateway",
+      title: "Payment Gateway Solution",
       description:
-        "Vyafac is a secure payment gateway platform designed for businesses to handle both one-time and recurring payments with ease. It solves the problem of region-based tax compliance by integrating automated tax calculations, invoice generation, and subscription management — all from a single, user-friendly dashboard.",
+        "Developed and contributed to a secure, scalable payment gateway solution enabling businesses to process transactions seamlessly. The system supports features like payment processing, transaction tracking, and reporting, ensuring high performance and compliance with industry standards.",
       technologies: [
         "Next.js",
         "Tailwind CSS",
@@ -53,9 +53,9 @@ function Projects() {
         "Chart.js",
       ],
       activeTechnology: 4,
-      liveLink: "https://app.vyafac.com/",
+      liveLink: null,
       githubLink: null,
-      previewImage: "/vyafac.png",
+      previewImage: null,
     },
     {
       title: "Admin Dashboard – Analytics & Management (Static UI)",

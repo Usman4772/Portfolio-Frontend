@@ -15,14 +15,16 @@ function Project({ project }) {
     <div className=" w-[95%] md:w-full mb-12 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Project Image */}
       <div className="w-full h-64 bg-gray-200 overflow-hidden">
-        <img
-          src={
-            previewImage ||
-            "/placeholder.svg?height=256&width=400&query=project preview"
-          }
-          alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-        />
+        {previewImage && (
+          <img
+            src={
+              previewImage ||
+              "/placeholder.svg?height=256&width=400&query=project preview"
+            }
+            alt={title}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          />
+        )}
       </div>
 
       {/* Project Content */}
