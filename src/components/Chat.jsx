@@ -58,7 +58,11 @@ function Chat({ message, flags, loading }) {
           </div>
         )}
 
-        
+        {flags?.about && (
+          <div className="animate-slideUp ">
+            <AboutMe />
+          </div>
+        )}
 
         {(flags?.journey || flags?.experience) && (
           <div className="animate-slideUp ">
