@@ -5,14 +5,14 @@ import GitHubButton from "./GithubButton";
 
 function NavBar({ setQuery, getAIResponse }) {
   function handleClickTalent() {
-    setQuery("I'm looking for talent.");
-    getAIResponse("I'm looking for talent.");
+    setQuery("Let's Connect");
+    getAIResponse("Let's Connect");
   }
 
   return (
-    <div className="w-full p-4 flex justify-center md:justify-between items-start">
+    <div className="w-full p-2 flex justify-center md:justify-between items-start">
       <BlinkingBadge
-        text="Looking for a talent?"
+        text="Let's Connect"
         handleClick={handleClickTalent}
         className="cursor-pointer max-md:hidden"
       />
