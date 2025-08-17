@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Logo from "./Logo";
 
 function BrandingHeader() {
@@ -17,7 +16,7 @@ function BrandingHeader() {
 
       <div className="text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-black tracking-tight">
-          AI Portfolio
+          Full-Stack Developer
         </h1>
       </div>
     </div>
