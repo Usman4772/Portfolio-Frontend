@@ -13,11 +13,11 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Usman Ali | Full-Stack & Frontend Developer Portfolio",
+  title: "Usman Ali | Full-Stack Developer",
   description:
-    "Explore the portfolio of Usman Ali, a skilled Frontend and Full-Stack Developer specializing in Next.js, React, Node.js, and MongoDB. Showcasing innovative web applications, scalable solutions, and modern UI/UX design.",
+    "Explore the portfolio of Usman Ali, a skilled Full-Stack Developer specializing in Next.js, React, Node.js, and MongoDB. Showcasing innovative web applications, scalable solutions, and modern UI/UX design.",
   icons: {
-    icon: "/avatar.png", // or "/icon.png"
+    icon: "/avatar.png",
   },
 };
 
